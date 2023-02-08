@@ -1,0 +1,7 @@
+Classes
+=======
+
+This page documents all classes describing all types of elements available to use in a Geometrix `Workfield` instance.
+
+.. automodule:: Geometrix.circle
+    :members:
