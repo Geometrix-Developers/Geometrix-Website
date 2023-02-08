@@ -27,9 +27,9 @@ jobs:
           git clone "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
         shell: bash
       
-      - uses: actions/checkout@v2
       - name: Run build script for Sphinx pages
+        working-directory: docs/
         env:
           GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
-        run: "docs/buildsite.sh"
+        run: "buildsite.sh"
         shell: bash
