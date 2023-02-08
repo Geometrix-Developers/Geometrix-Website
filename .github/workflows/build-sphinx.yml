@@ -29,8 +29,7 @@ jobs:
       
       - uses: actions/checkout@v2
       - name: Run build script for Sphinx pages
-        working-directory: docs
         env:
           GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
-        run: "buildsite.sh"
+        run: "docs/buildsite.sh"
         shell: bash
